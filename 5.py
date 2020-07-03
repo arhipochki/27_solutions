@@ -57,7 +57,7 @@ for i in range(N):
             P1 = MaxEven
             P2 = MaxOdd
 
-    print(MaxDiv7Even, MaxEven, MaxDiv7Odd, MaxOdd)
+    #print(MaxDiv7Even, MaxEven, MaxDiv7Odd, MaxOdd)
 
 if P1 % 7 == 0 or P2 % 7 == 0:
     print(P1, P2)
