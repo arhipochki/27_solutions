@@ -4,13 +4,13 @@
 
 N = int(input())
 
-MaxDiv7Even = 0
-MaxEven = 0
-MaxDiv7Odd = 0
-MaxOdd = 0
+MaxDiv7Even = -1
+MaxEven = -1
+MaxDiv7Odd = -1
+MaxOdd = -1
 d = 160
-P1 = 1
-P2 = 1
+P1 = -1
+P2 = -1
 
 for i in range(N):
     newItem = int(input())
@@ -56,6 +56,8 @@ for i in range(N):
         if MaxEven + MaxOdd > P1 + P2:
             P1 = MaxEven
             P2 = MaxOdd
+
+    print(MaxDiv7Even, MaxEven, MaxDiv7Odd, MaxOdd)
 
 if P1 % 7 == 0 or P2 % 7 == 0:
     print(P1, P2)
